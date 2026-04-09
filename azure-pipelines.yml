@@ -9,13 +9,13 @@ steps:
   inputs:
     version: '8.x'
 
-- script: dotnet restore
+- script: dotnet restore Lab4_Library.sln
   displayName: Restore
 
-- script: dotnet build --configuration Release
+- script: dotnet build Lab4_Library.sln --configuration Release
   displayName: Build
 
-- script: dotnet pack StringExtensions.Library/StringExtensions.Library.csproj -c Release -o $(Build.ArtifactStagingDirectory)
+- script: dotnet pack Lab4_Library.sln --configuration Release --output $(Build.ArtifactStagingDirectory)
   displayName: Pack
 
 - task: NuGetAuthenticate@1
