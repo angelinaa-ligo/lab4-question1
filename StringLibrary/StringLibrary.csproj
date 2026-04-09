@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <PackageId>Angelina.StringLibrary</PackageId>
+    <Version>1.0.1</Version>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
